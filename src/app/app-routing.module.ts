@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'loading',
     loadChildren: () => import('./pages/componentes/loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'esqueci-senha',
+    loadChildren: () => import('./pages/componentes/esqueci-senha/esqueci-senha.module').then( m => m.EsqueciSenhaPageModule)
   }
 ];
 
