@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button slot="start"color="primary"></ion-menu-button>
+    <ion-img src="../../../../assets/images/Logo-transparente.png"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-wrap">
+    <h4>Bem vindo ao app de limpesa mais amado do brasil</h4>
+    
+  </div>
+<ion-header>
+  <div class="Capa">
+    <img src="../../../../assets/images/home.png">
+  </div>
+  <div class="text1">
+    <h4>Encontre uma diarista</h4>
+    <br>
+  </div>
+</ion-header>
+
+<ion-list>
+  <ion-searchbar show-clear-button="always" clear-icon="funnel" value="Search"></ion-searchbar>
+  <ion-list-header> Prestadores:</ion-list-header>
+
+  
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="../../../../assets/images/avatar1.png" />
+    </ion-avatar>
+    <ion-label>
+      Sueli Cavalcante
+    </ion-label>
+    <ion-icon name="information-circle" slot="end"></ion-icon>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="../../../../assets/images/avatar2.png" />
+    </ion-avatar>
+    <ion-label>
+      Marinete Silva Santos
+    </ion-label>
+    <ion-icon name="information-circle" slot="end" routerLink="/perfil-prestador"></ion-icon>
+  </ion-item>
+  
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="../../../../assets/images/avatar3.png" />
+    </ion-avatar>
+    <ion-label>
+      Leila Aparecida
+    </ion-label>
+    <ion-icon name="information-circle" slot="end"></ion-icon>
+  </ion-item>
+  
+</ion-list>
+
+<ion-tabs>
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="schedule">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Agenda</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Chat</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-content fullscreen="true">
+    
+    <ion-card-content class="card">
+        <ion-card-header [translucent]="true">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+               
+              <img src="../../../../assets/images/Logo-transparente.png" alt="logo">
+            </div>          
+            
+          <!--   <div class="p-login">
+              <p>Faça o seu login</p>
+            </div> -->
+
+        </ion-card-header>
+
+        <ion-card-content >
+           
+                <ion-item fill="outline" style=" margin-bottom: 10px;">
+                  <ion-icon name="mail-outline" slot="start"></ion-icon>
+                  <ion-label position="fixed">Usuário: </ion-label>
+                  <ion-input type="email" ngModel email></ion-input>
+                  <ion-note slot="error">E-mail inválido</ion-note>                 
+                </ion-item>
+
+                <ion-item fill="outline" style=" margin-bottom: 10px;">
+                  <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+                  <ion-label position="fixed">Senha: </ion-label>
+                  <ion-input type="password"></ion-input>                 
+                  <ion-note slot="error">Senha inválida</ion-note>
+                </ion-item>            
+
+        </ion-card-content>
+        <ion-item>
+          <ion-checkbox slot="start"></ion-checkbox>
+          <div class="sublinhado">
+             <p>Lembrar senha</p>
+          </div>
+          <div class="sublinhado" slot="end">
+            <p>Esqueci a senha</p>
+          </div>
+        </ion-item>
+        <br><br>
+        <ion-grid>
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="6">
+                <ion-button size="small" fill="solid" color="primary" expand="block" routerLink="/home">Entrar</ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button size="small" fill="outline" color="primary" expand="block" routerLink="#">Cadastrar-se</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </ion-card-content>
+</ion-content>
+
