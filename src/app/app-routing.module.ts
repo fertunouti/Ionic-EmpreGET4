@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'esqueci-senha',
     loadChildren: () => import('./pages/componentes/esqueci-senha/esqueci-senha.module').then( m => m.EsqueciSenhaPageModule)
+  },
+  {
+    path: 'redefinir-senha',
+    loadChildren: () => import('./pages/componentes/redefinir-senha/redefinir-senha.module').then( m => m.RedefinirSenhaPageModule)
   }
 ];
 
