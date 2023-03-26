@@ -46,7 +46,32 @@ const routes: Routes = [
   {
     path: 'redefinir-senha',
     loadChildren: () => import('./pages/componentes/redefinir-senha/redefinir-senha.module').then( m => m.RedefinirSenhaPageModule)
+  },
+  {
+    path: 'tela-inicial-prestador',
+    loadChildren: () => import('./pages/componentes/tela-inicial-prestador/tela-inicial-prestador.module').then( m => m.TelaInicialPrestadorPageModule)
+  },
+  
+  {
+    path: 'os-view',
+    loadChildren: () => import('./pages/componentes/os-view/os-view.module').then( m => m.OsViewPageModule)
+  },
+  {
+    path: 'finalizar-os',
+    loadChildren: () => import('./pages/componentes/finalizar-os/finalizar-os.module').then( m => m.FinalizarOsPageModule)
+  },
+  {
+    path: 'agendamentos-prestador',
+    loadChildren: () => import('./pages/componentes/agendamentos-prestador/agendamentos-prestador.module').then( m => m.AgendamentosPrestadorPageModule)
+  },
+  {
+    path: 'gerenciar-perfil',
+    loadChildren: () => import('./pages/componentes/gerenciar-perfil/gerenciar-perfil.module').then( m => m.GerenciarPerfilPageModule)
   }
+
+
+
+
 ];
 
 @NgModule({
